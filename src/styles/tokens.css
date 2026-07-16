@@ -1,0 +1,62 @@
+/* ==========================================================================
+   EinfachPatho — Design Tokens
+   Palette "Klinisches Petrol": ruhig, klar, mit dem DURST-Schema als
+   inhaltlich begründetem Strukturelement (siehe Disease-Detail-Komponente).
+   ========================================================================== */
+
+:root {
+  /* ---- Farben -------------------------------------------------------- */
+  --color-bg: #f5f7f7;          /* Nebel — Seitenhintergrund */
+  --color-surface: #ffffff;     /* Karte — Flächen, Cards, Inputs */
+  --color-surface-sunken: #eef2f1; /* leicht abgesetzte Fläche (Skeletons, Divider-Felder) */
+  --color-ink: #14252b;         /* Tinte — Fließtext, Überschriften */
+  --color-muted: #4f6764;       /* gedämpftes Petrol-Grau — Sekundärtext */
+  --color-border: #dde6e4;      /* Kartenrahmen, Trennlinien */
+
+  --color-primary: #0e6e66;       /* Petrol — Primäraktionen, Links, aktive Zustände */
+  --color-primary-hover: #0a5951; /* Petrol dunkel — Hover/Active */
+  --color-primary-soft: #dceeea;  /* Petrol hell — Badges, Kategorien, Hintergrundakzente */
+  --color-primary-soft-ink: #0a4d47; /* Text auf Petrol-hell-Flächen */
+
+  --color-flag: #c23b22;        /* Warnrot — ausschließlich für "Red Flags" / Warnsignale */
+  --color-flag-soft: #f8e3dc;   /* Warnrot hell — Hintergrund für Warnsignale-Badge */
+
+  --color-danger: #b3261e;      /* Fehlerzustände in Formularen */
+  --color-danger-soft: #fbe9e7;
+
+  /* ---- Typografie ------------------------------------------------------ */
+  --font-display: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.375rem;
+  --fs-xl: 1.75rem;
+  --fs-2xl: 2.25rem;
+
+  /* ---- Radius / Schatten / Abstand ------------------------------------ */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+
+  --shadow-card: 0 1px 2px rgba(20, 37, 43, 0.05), 0 6px 16px -8px rgba(20, 37, 43, 0.12);
+  --shadow-raised: 0 4px 10px -2px rgba(20, 37, 43, 0.14), 0 12px 28px -12px rgba(20, 37, 43, 0.18);
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+
+  --max-width: 760px;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Bewusst kein automatisches Dark Mode für v1 — DURST-Inhalte (Warnsignale)
+     brauchen geprüften Kontrast. Token-Stelle vorbereitet für spätere Phase. */
+}
